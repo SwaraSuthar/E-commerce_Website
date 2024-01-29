@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #B3B1AE; /* Steel Blue */
+    color: #2E2C2D; /* Dark Charcoal Gray */
+}
+
+nav {
+    background-color: #49748C; /* Light Grayish Blue */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #FFF; /* White */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #737270; /* Dark Grayish Olive */
+}
+
+header {
+    background-color: #49748C; /* Light Grayish Blue */
+    color: #2E2C2D; /* Dark Charcoal Gray */
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.product-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product {
+    width: 300px;
+    border: 1px solid #2E2C2D; /* Dark Charcoal Gray */
+    padding: 20px;
+    margin: 10px;
+    background-color: #E4E6EC; /* Light Grayish Blue */
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #49748C; /* Light Grayish Blue */
+    color: #2E2C2D; /* Dark Charcoal Gray */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .product {
+        width: 100%;
+    }
+}
